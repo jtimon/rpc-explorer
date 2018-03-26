@@ -19,6 +19,7 @@ services:
       dockerfile: docker/explorer/Dockerfile
     volumes:
       - ../../explorer-data/target:/root/target
+      - ../gui:/build_docker/gui
     ports:
       - "5000:5000"
     networks:
